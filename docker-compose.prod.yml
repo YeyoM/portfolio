@@ -1,0 +1,31 @@
+version: '3.5'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: portfolio
+    ports:
+      - '3000:3000'
+    volumes:
+      - .:/app
+      - /app/node_modules
+    restart: always
+
+  nginx:
+    image: jonasal/nginx-certbot
+    restart: always
+    environment:
+      - CERTBOT_EMAIL=yeyomoreno2003@hotmail.com
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - nginx_secrets:/etc/letsencrypt
+      - ./user_conf.d:/etc/nginx/user_conf.d
+    depends_on:
+      - app
+
+volumes:
+  nginx_secrets:
