@@ -10,7 +10,7 @@ export default function Home() {
         {/* Hero */}
         <div className="flex flex-col w-[90%] max-w-[990px] mt-36">
           <p className="text-5xl font-normal text-black tracking-wide">
-          hi, this is Diego! <br />
+          hey, this is Diego! <br />
           a <span className="font-semibold italic text-[#2292BF]"> software engineer </span> making <br />
           sites more accessible and <br />
           reliable. 
@@ -55,7 +55,7 @@ export default function Home() {
             <div className="flex flex-row items-center justify-center">
               <a 
                 className="text-md font-semibold text-[#2292BF] tracking-wide hover:underline decoration-2 decoration-[#2292BF] flex flex-row items-center justify-center"
-                href="https://fellowship.mlh.io/programs/sre-fellowship"
+                href="/mlh-fellowship"
               >
                 Learn more
                 <Image
@@ -89,12 +89,15 @@ export default function Home() {
                 <p className="text-md font-normal text-black tracking-wide italic">
                   A terminal-based music player
                 </p>
+                <p className="text-xs font-normal tracking-wide text-[#1256bd]">
+                  Next, React, react-terminal, Firebase
+                </p>
               </div>
             </div>
             <div className="flex flex-row items-center justify-center">
               <a 
                 className="text-md font-semibold text-[#2292BF] tracking-wide hover:underline decoration-2 decoration-[#2292BF] flex flex-row items-center justify-center"
-                href="https://fellowship.mlh.io/programs/sre-fellowship"
+                href="/lofi-terminal"
               >
                 Learn more
                 <Image
@@ -121,12 +124,15 @@ export default function Home() {
                 <p className="text-md font-normal text-black tracking-wide italic">
                   Your perfect gym partner
                 </p>
+                <p className="text-xs font-normal tracking-wide text-[#1256bd]">
+                  React Native, Expo, Firebase
+                </p>
               </div>
             </div>
             <div className="flex flex-row items-center justify-center">
               <a 
                 className="text-md font-semibold text-[#2292BF] tracking-wide hover:underline decoration-2 decoration-[#2292BF] flex flex-row items-center justify-center"
-                href="https://fellowship.mlh.io/programs/sre-fellowship"
+                href="/wellness"
               >
                 Learn more
                 <Image
@@ -153,12 +159,16 @@ export default function Home() {
                 <p className="text-md font-normal text-black tracking-wide italic">
                   A python maze solver using DFS, BFS, and A*
                 </p>
+                <p className="text-xs font-normal tracking-wide text-[#1256bd]">
+                  Python
+                </p>
               </div>
             </div>
             <div className="flex flex-row items-center justify-center">
               <a 
                 className="text-md font-semibold text-[#2292BF] tracking-wide hover:underline decoration-2 decoration-[#2292BF] flex flex-row items-center justify-center"
-                href="https://fellowship.mlh.io/programs/sre-fellowship"
+                href="https://github.com/YeyoM/mazeSolver"
+                target="_blank"
               >
                 Learn more
                 <Image
@@ -185,12 +195,15 @@ export default function Home() {
                 <p className="text-md font-normal text-black tracking-wide italic">
                   A cocktail recipe generator
                 </p>
+                <p className="text-xs font-normal tracking-wide text-[#1256bd]">
+                  React, Next, Tailwind, CocktailDB, Firebase Auth
+                </p>
               </div>
             </div>
             <div className="flex flex-row items-center justify-center">
               <a 
                 className="text-md font-semibold text-[#2292BF] tracking-wide hover:underline decoration-2 decoration-[#2292BF] flex flex-row items-center justify-center"
-                href="https://fellowship.mlh.io/programs/sre-fellowship"
+                href="/cocktail-please"
               >
                 Learn more
                 <Image
