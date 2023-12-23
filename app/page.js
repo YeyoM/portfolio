@@ -4,23 +4,25 @@ export default function Home() {
   return (
     <main className="bg-[#FBF6ED] min-h-screen">
       {/* Top navbar */}
-      <div className="flex items-center justify-between py-6 w-full fixed bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10">
+      <div className="flex items-center w-full justify-center fixed bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10">
+        <div className="flex items-center justify-between py-6 w-full max-w-[1280px]">
         { /* Left side */}
         <div className="flex items-center space-x-4 ml-6">
-          <span className="font-semibold text-2xl text-[#2292BF] tracking-wide">Diego Moreno</span>
+          <a className="font-semibold text-2xl text-[#2292BF] tracking-wide" href="/">Diego Moreno</a>
         </div>
         { /* Right side */}
         <div className="flex items-center space-x-4 mr-6">
-          <a href="#" className="text-gray-600 hover:text-gray-900 hover:font-medium underline decoration-2 decoration-[#2292BF] tracking-wider">about</a>
+          <a href="/about" className="text-gray-600 hover:text-gray-900 hover:font-medium underline decoration-2 decoration-[#2292BF] tracking-wider">about me</a>
           <span className="text-gray-600">/</span>
-          <a href="#" className="text-gray-600 hover:text-gray-900 hover:font-medium underline decoration-2 decoration-[#2292BF] tracking-wider">projects</a>
+          <a href="/" className="text-gray-600 hover:text-gray-900 hover:font-medium underline decoration-2 decoration-[#2292BF] tracking-wider">work</a>
           <span className="text-gray-600">/</span>
-          <a href="#" className="text-gray-600 hover:text-gray-900 hover:font-medium underline decoration-2 decoration-[#2292BF] tracking-wider">contact</a>
+          <a href="https://drive.google.com/file/d/1ofyxwcS4hPEueNt7ZfQlibo1MRdBq_ie/view?usp=sharing" target='_blank' className="text-gray-600 hover:text-gray-900 hover:font-medium underline decoration-2 decoration-[#2292BF] tracking-wider">resume</a>
+        </div>
         </div>
       </div>
       <div className="mx-auto flex flex-col items-center justify-center">
         {/* Hero */}
-        <div className="flex flex-col w-[80%] max-w-[990px] mt-36">
+        <div className="flex flex-col w-[90%] max-w-[990px] mt-36">
           <p className="text-5xl font-normal text-black tracking-wide">
           hi, this is Diego! <br />
           a <span className="font-semibold italic text-[#2292BF]"> software engineer </span> making <br />
@@ -28,9 +30,9 @@ export default function Home() {
           reliable. 
           </p>
         </div>
-        <hr className="w-[80%] max-w-[990px] border-black border-opacity-50 mt-12" />
+        <hr className="w-[90%] max-w-[990px] border-black border-opacity-50 mt-12" />
         {/* Status */}
-        <div className="flex flex-col w-[80%] max-w-[990px] mt-6">
+        <div className="flex flex-col w-[90%] max-w-[990px] mt-6">
           <p className="text-md font-normal text-black tracking-wide">
           Currently. <span className="italic font-semibold">Computer Science student @ UAA</span>
           </p>
@@ -42,7 +44,7 @@ export default function Home() {
           </p>
         </div>
         {/* Experience */}
-        <div className="flex flex-col w-[80%] max-w-[990px] mt-24">
+        <div className="flex flex-col w-[90%] max-w-[990px] mt-24">
           <p className="text-2xl font-normal text-black tracking-wide italic">
           Experience
           </p>
@@ -81,7 +83,7 @@ export default function Home() {
           </div>
         </div>
         {/* Projects */}
-        <div className="flex flex-col w-[80%] max-w-[990px] mt-24">
+        <div className="flex flex-col w-[90%] max-w-[990px] mt-24">
           <p className="text-2xl font-normal text-black tracking-wide italic">
             Side projects
           </p>
@@ -217,7 +219,7 @@ export default function Home() {
         </div>
 
         {/* Footer */}
-        <div className="flex flex-col w-[80%] max-w-[990px] mt-24">
+        <div className="flex flex-col w-[90%] max-w-[990px] mt-24">
           <hr className="w-full border-black border-opacity-50 mt-2" />
           <div className="flex flex-col items-center justify-center mt-10">
             <div className="flex items-center space-x-4 mr-6">
