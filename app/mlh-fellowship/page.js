@@ -12,7 +12,7 @@ export default function Page() {
             Navigating the MLH Fellowship: A Dive into Production Engineering with Meta 🚀
           </h1>
           <p className="text-md font-normal text-black text-justify">
-            Hey folks! I'm here to talk about the MLH Fellowship, and I'm buzzing to spill the tea on this transformative ride in the Production Engineer track powered by Meta.
+            Hey folks! I&apos;m here to talk about the MLH Fellowship, and I&apos;m buzzing to spill the tea on this transformative ride in the Production Engineer track powered by Meta.
           </p>
           <Image
             src="/fellowship-2.jpg"
@@ -28,19 +28,19 @@ export default function Page() {
             Decoding Production Engineering
           </h3>
           <p className="text-md font-normal text-black text-justify">
-            Ever wondered what a production engineer does? It's this cool mashup of software, systems, and network sorcery—everything from code crafting to tackling tricky production puzzles.
+            Ever wondered what a production engineer does? It&apos;s this cool mashup of software, systems, and network sorcery—everything from code crafting to tackling tricky production puzzles.
           </p>
         
           <p className="text-md font-normal text-black text-justify">
-            Thrown into the deep end with a personal project, I dove into Docker, nginx, and managing a Virtual Private Server like a tech ninja. Now, I'm rocking skills I never thought I'd master.
+            Thrown into the deep end with a personal project, I dove into Docker, nginx, and managing a Virtual Private Server like a tech ninja. Now, I&apos;m rocking skills I never thought I&apos;d master.
           </p>
           
           <p className="text-md font-normal text-black text-justify">
-            Bug fixing in production got real, and the fellowship armed me with bash scripting and Linux wisdom. It's like having a superhero toolkit for tech hiccups.
+            Bug fixing in production got real, and the fellowship armed me with bash scripting and Linux wisdom. It&apos;s like having a superhero toolkit for tech hiccups.
           </p>
           
           <p className="text-md font-normal text-black text-justify">
-            Meta's Production Engineers dropped knowledge bombs in workshops. Connecting theory to real-world Meta magic was mind-blowing—it's like peeking behind the tech curtain.
+            Meta&apos;s Production Engineers dropped knowledge bombs in workshops. Connecting theory to real-world Meta magic was mind-blowing—it&apos;s like peeking behind the tech curtain.
           </p>
           
           <p className="text-md font-normal text-black text-justify">

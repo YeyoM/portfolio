@@ -12,7 +12,7 @@ export default function Page() {
             Wellness - Elevate Your Health and Fitness Journey 🌟
           </h1>
           <p className="text-md font-normal text-black text-justify">
-            Welcome to Wellness, where health isn't just a goal—it's a way of life. This mobile app is your perfect gym companion, designed for everyone, from beginners taking their first steps to fitness pros pushing their limits. Crafted with React Native, Expo, and Firebase, Wellness is more than an app; it's a commitment to your well-being. Unfurtunately, the app is not available on the App Store or Google Play Store yet but soon it will be.
+            Welcome to Wellness, where health isn&apos;t just a goal—it&apos;s a way of life. This mobile app is your perfect gym companion, designed for everyone, from beginners taking their first steps to fitness pros pushing their limits. Crafted with React Native, Expo, and Firebase, Wellness is more than an app; it&apos;s a commitment to your well-being. Unfurtunately, the app is not available on the App Store or Google Play Store yet but soon it will be.
           </p>
           <h3 className="text-2xl font-normal text-black tracking-wide mt-6">
             Understanding Wellness
@@ -25,7 +25,7 @@ export default function Page() {
             className="rounded-lg mt-6 mb-6"
           />
           <p className="text-md font-normal text-black text-justify">
-            Wellness isn't just about surviving; it's about thriving by practicing healthy habits daily. It's the synergy of physical, mental, and social well-being, forming the pillars of the Health Triangle. The Wellness app is your guide to achieving and tracking this holistic wellness journey.
+            Wellness isn&apos;t just about surviving; it&apos;s about thriving by practicing healthy habits daily. It&apos;s the synergy of physical, mental, and social well-being, forming the pillars of the Health Triangle. The Wellness app is your guide to achieving and tracking this holistic wellness journey.
           </p>
           <h3 className="text-2xl font-normal text-black tracking-wide mt-6 mb-4">
             Key Features
@@ -34,7 +34,7 @@ export default function Page() {
             Comprehensive Wellness Tracking: Monitor and track your physical and mental health with user-friendly interfaces that adapt to your fitness level.
           </p>
           <p className="text-md font-normal text-black text-justify">
-            Personalized Workouts: Whether you're a fitness rookie or a seasoned pro, Wellness offers personalized workout plans tailored to your goals.
+            Personalized Workouts: Whether you&apos;re a fitness rookie or a seasoned pro, Wellness offers personalized workout plans tailored to your goals.
           </p>
           <p className="text-md font-normal text-black text-justify">
             Firebase Integration: Seamless data storage and retrieval with Firebase, ensuring your wellness journey is always backed up and accessible.
@@ -55,7 +55,7 @@ export default function Page() {
             Future Vision - AI and ML Integration
           </h3>
           <p className="text-md font-normal text-black text-justify">
-            Our journey doesn't end here. The Wellness app is set to evolve with the integration of Artificial Intelligence (AI) and Machine Learning (ML). Imagine having a virtual fitness coach powered by AI, analyzing your progress, adapting your workout plans, and offering insights to enhance your gains. The future of wellness is smart, adaptive, and tailored just for you.
+            Our journey doesn&apos;t end here. The Wellness app is set to evolve with the integration of Artificial Intelligence (AI) and Machine Learning (ML). Imagine having a virtual fitness coach powered by AI, analyzing your progress, adapting your workout plans, and offering insights to enhance your gains. The future of wellness is smart, adaptive, and tailored just for you.
           </p>
           <h3 className="text-2xl font-normal text-black tracking-wide mt-6 mb-4">
             Check Out the code
@@ -68,9 +68,9 @@ export default function Page() {
             Your Personal Wellness Journey
           </h3>
           <p className="text-md font-normal text-black text-justify mt-4">
-            I embarked on this project with the goal of creating an app that's not just a fitness tracker but a true wellness companion. The user interface is crafted for simplicity, ensuring users of all levels find it easy to navigate and stay committed to their health goals.
+            I embarked on this project with the goal of creating an app that&apos;s not just a fitness tracker but a true wellness companion. The user interface is crafted for simplicity, ensuring users of all levels find it easy to navigate and stay committed to their health goals.
 
-            Join us on this journey of wellness, where every step you take is a step towards a healthier, thriving you. Here's to your well-being! 🏋️‍♂️🌈
+            Join us on this journey of wellness, where every step you take is a step towards a healthier, thriving you. Here&apos;s to your well-being! 🏋️‍♂️🌈
           </p>
         </div>
         <Footer />

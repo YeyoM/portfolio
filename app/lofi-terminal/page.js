@@ -12,7 +12,7 @@ export default function Page() {
             Lofi Terminal - Your Companion for Coding Journeys 🎶
           </h1>
           <p className="text-md font-normal text-black text-justify">
-            Welcome to Lofi Terminal, where every developer finds solace in the rhythmic beats of lo-fi music during those intense coding marathons. Built with Next.js and React-terminal, this web-based lofi player is not just an app; it's an experience. View the live demo <a className="text-[#2292BF] hover:underline" href="https://lofi-terminal.vercel.app/" target="_blank">here</a>.
+            Welcome to Lofi Terminal, where every developer finds solace in the rhythmic beats of lo-fi music during those intense coding marathons. Built with Next.js and React-terminal, this web-based lofi player is not just an app; it&apos;s an experience. View the live demo <a className="text-[#2292BF] hover:underline" href="https://lofi-terminal.vercel.app/" target="_blank">here</a>.
           </p>
           <Image
             src="https://images.unsplash.com/photo-1630713815150-2c847025c1d9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -28,7 +28,7 @@ export default function Page() {
             Lofi refers to a recording with less than professional or flawed sound quality. “Lo-fi” is short for “low fidelity,” and initially referred to a low-quality recording with audible imperfections, such as background noise or performance mistakes, recorded with inexpensive equipment—the opposite of high fidelity or hi-fi production.
             Lofi music can reduce stress and enhance focus, resulting in quality study sessions.
             Lofi and other musical styles can help students reduce distractions while boosting brain activity.
-            Slower, relaxing music can improve your mood by increasing serotonin and dopamine levels. A study from Montreal's McGill University found that music listeners receive up to a 9% boost in dopamine levels. This boost in brain chemicals can enhance studying by keeping developers and students focused and relaxed.
+            Slower, relaxing music can improve your mood by increasing serotonin and dopamine levels. A study from Montreal&apos;s McGill University found that music listeners receive up to a 9% boost in dopamine levels. This boost in brain chemicals can enhance studying by keeping developers and students focused and relaxed.
             In addition to elevating mood and increasing brain activity, lo-fi music offers a solid list of benefits that can help you make the most of your studying. Keep reading to learn more about the benefits of lofi music.
           </p>
           <h3 className="text-2xl font-normal text-black tracking-wide mt-6 mb-4">

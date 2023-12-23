@@ -1,13 +1,11 @@
 FROM node:18-alpine
 
-WORKDIR /portfolio
+WORKDIR /app
 
-COPY package.json .
+COPY package.json ./
 
 RUN npm install
 
 COPY . .
 
 CMD ["npm", "run", "dev"]
-
-EXPOSE 3000
