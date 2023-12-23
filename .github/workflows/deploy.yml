@@ -28,7 +28,7 @@
             SSH_IP: ${{ secrets.SSH_IP }}
           
         - name: Deploy Site
-          run: ssh my-vps '~/redeploy-site.sh'
+          run: ssh my-vps '/root/redeploy_site.sh'
 
         - name: Discord Message
           run: curl -s -X POST "${{ secrets.DISCORD_WEBHOOK }}" -d "content=🚀 Deployment Successful"
