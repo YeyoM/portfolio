@@ -8,13 +8,13 @@ export default function Home() {
       <Navbar />
       <div className="mx-auto flex flex-col items-center justify-center">
         {/* Hero */}
-        <div className="flex flex-row w-[90%] max-w-[990px] mt-36 h-auto">
+        <div className="flex flex-col md:flex-row w-[90%] max-w-[990px] mt-36 h-auto">
           {/* Left side */}
           <div className='w-full'>
             <h3 className="text-5xl font-normal text-black tracking-wide mb-10">
               hi there!
             </h3>
-            <p className="text-xl font-normal text-black tracking-wide">
+            <p className="text-[1rem] md:text-xl font-normal text-black tracking-wide mb-10">
               I am Diego, a computer science student at Universidad Autónoma de Aguascalientes, Mex. <br /> <br />
               I have a strong passion for software engineering and all the exciting aspects that come with it. <br /> <br />
               Throughout my academic journey, I have developed a keen interest in frontend development and Site Reliability Engineering.<br /> <br />
@@ -30,30 +30,30 @@ export default function Home() {
               alt="Picture of the author"
               width={226}
               height={226}
-              className="relative z-10 top-[20px] left-[-95px]"
+              className="relative md:z-10 md:top-[20px] md:left-[-95px] mb-4"
             />
             <Image
               src="/img-2.png"
               alt="Picture of the author"
               width={226}
               height={226}
-              className="relative z-10 top-[-80px] left-[105px]"
+              className="relative md:z-10 md:top-[-80px] md:left-[105px] mb-4"
             />
             <Image
               src="/img-3.png"
               alt="Picture of the author"
               width={226}
               height={226}
-              className="relative z-10 top-[-180px] left-[-95px]"
+              className="relative md:z-10 md:top-[-180px] md:left-[-95px] mb-4"
             />
             <Image
               src="/img-4.png"
               alt="Picture of the author"
               width={226}
               height={226}
-              className="relative z-10 top-[-270px] left-[105px]"
+              className="relative md:z-10 md:top-[-270px] md:left-[105px]"
             />
-            <p className="text-xl font-light italic  text-black tracking-wide mt-10 relative z-10 top-[-280px] left-[60px]">
+            <p className="text-xl font-light italic  text-black tracking-wide mt-10 relative md:z-10 md:top-[-280px] md:left-[60px] mb-4">
               Me and some cool folks :)
             </p>
           </div>
@@ -63,11 +63,6 @@ export default function Home() {
 
       </div>
 
-      {/* Orbs */}
-      <div className="absolute w-[300px] h-[300px] blur-[80px] top-[10rem] right-[20rem] rounded-[50%] bg-[#00b7ff93] opacity-30"></div>
-      <div className="absolute w-[300px] h-[300px] blur-[80px] top-[15rem] left-[10rem] rounded-[50%] bg-[#00b7ff93] opacity-30"></div>
-      <div className="absolute w-[300px] h-[300px] blur-[80px] top-[40rem] right-[25rem] rounded-[50%] bg-[#00b7ff93] opacity-30"></div>
-      
     </main>
   )
 }

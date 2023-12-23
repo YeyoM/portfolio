@@ -9,12 +9,12 @@ export default function Home() {
       <div className="mx-auto flex flex-col items-center justify-center">
         {/* Hero */}
         <div className="flex flex-col w-[90%] max-w-[990px] mt-36">
-          <p className="text-5xl font-normal text-black tracking-wide">
+          <h3 className="text-3xl font-normal text-black tracking-wide sm:text-4xl md:text-5xl">
           hey, this is Diego! <br />
           a <span className="font-semibold italic text-[#2292BF]"> software engineer </span> making <br />
           sites more accessible and <br />
           reliable. 
-          </p>
+          </h3>
         </div>
         <hr className="w-[90%] max-w-[990px] border-black border-opacity-50 mt-12" />
         {/* Status */}
@@ -44,17 +44,17 @@ export default function Home() {
                 height={100}
               />
               <div className="flex flex-col ml-4">
-                <p className="text-md font-semibold text-black tracking-wide">
+                <p className="sm:text-[1rem] text-sm font-semibold text-black tracking-wide">
                   Major League Hacking
                 </p>
-                <p className="text-md font-normal text-black tracking-wide italic">
+                <p className="sm:text-[1rem] text-sm font-normal text-black tracking-wide italic">
                   Site Reliability Engineer Fellow
                 </p>
               </div>
             </div>
             <div className="flex flex-row items-center justify-center">
               <a 
-                className="text-md font-semibold text-[#2292BF] tracking-wide hover:underline decoration-2 decoration-[#2292BF] flex flex-row items-center justify-center"
+                className="sm:text-[1rem] text-sm font-semibold text-[#2292BF] tracking-wide hover:underline decoration-2 decoration-[#2292BF] flex flex-row items-center justify-center ml-2"
                 href="/mlh-fellowship"
               >
                 Learn more
@@ -75,18 +75,18 @@ export default function Home() {
           </p>
           <hr className="w-full border-black border-opacity-50 mt-2" />
           <div className="flex flex-row items-center justify-between mt-10">
-            <div className="flex flex-row items-center justify-center">
+            <div className="flex flex-row w-full">
               <Image
                 src="/lofi-terminal.png"
                 alt="lofi-terminal"
-                width={160}
-                height={160}
+                width={150}
+                height={150}
               />
               <div className="flex flex-col ml-4">
-                <p className="text-md font-semibold text-black tracking-wide">
+                <p className="sm:text-[1rem] text-sm font-semibold text-black tracking-wide">
                   Lo-Fi Terminal
                 </p>
-                <p className="text-md font-normal text-black tracking-wide italic">
+                <p className="sm:text-[1rem] text-sm font-normal text-black tracking-wide italic">
                   A terminal-based music player
                 </p>
                 <p className="text-xs font-normal tracking-wide text-[#1256bd]">
@@ -94,9 +94,9 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-row items-center justify-center">
+            <div className="flex flex-row items-center justify-center ml-2">
               <a 
-                className="text-md font-semibold text-[#2292BF] tracking-wide hover:underline decoration-2 decoration-[#2292BF] flex flex-row items-center justify-center"
+                className="sm:text-[1rem] text-sm font-semibold text-[#2292BF] tracking-wide hover:underline decoration-2 decoration-[#2292BF] flex flex-row items-center justify-center"
                 href="/lofi-terminal"
               >
                 Learn more
@@ -110,18 +110,18 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-row items-center justify-between mt-10">
-            <div className="flex flex-row items-center justify-center">
+            <div className="flex flex-row w-full">
               <Image
                 src="/wellness.png"
                 alt="wellness"
-                width={160}
-                height={160}
+                width={150}
+                height={150}
               />
               <div className="flex flex-col ml-4">
-                <p className="text-md font-semibold text-black tracking-wide">
+                <p className="sm:text-[1rem] text-sm font-semibold text-black tracking-wide">
                   Wellness
                 </p>
-                <p className="text-md font-normal text-black tracking-wide italic">
+                <p className="sm:text-[1rem] text-sm font-normal text-black tracking-wide italic">
                   Your perfect gym partner
                 </p>
                 <p className="text-xs font-normal tracking-wide text-[#1256bd]">
@@ -129,9 +129,9 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-row items-center justify-center">
+            <div className="flex flex-row items-center justify-center ml-2">
               <a 
-                className="text-md font-semibold text-[#2292BF] tracking-wide hover:underline decoration-2 decoration-[#2292BF] flex flex-row items-center justify-center"
+                className="sm:text-[1rem] text-sm font-semibold text-[#2292BF] tracking-wide hover:underline decoration-2 decoration-[#2292BF] flex flex-row items-center justify-center"
                 href="/wellness"
               >
                 Learn more
@@ -145,18 +145,18 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-row items-center justify-between mt-10">
-            <div className="flex flex-row items-center justify-center">
+            <div className="flex flex-row w-full">
               <Image
                 src="/maze-solver.png"
                 alt="maze-solver"
-                width={160}
-                height={160}
+                width={150}
+                height={150}
               />
               <div className="flex flex-col ml-4">
-                <p className="text-md font-semibold text-black tracking-wide">
+                <p className="sm:text-[1rem] text-sm font-semibold text-black tracking-wide">
                   Maze Solver
                 </p>
-                <p className="text-md font-normal text-black tracking-wide italic">
+                <p className="sm:text-[1rem] text-sm font-normal text-black tracking-wide italic">
                   A python maze solver using DFS, BFS, and A*
                 </p>
                 <p className="text-xs font-normal tracking-wide text-[#1256bd]">
@@ -164,9 +164,9 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-row items-center justify-center">
+            <div className="flex flex-row items-center justify-center ml-2">
               <a 
-                className="text-md font-semibold text-[#2292BF] tracking-wide hover:underline decoration-2 decoration-[#2292BF] flex flex-row items-center justify-center"
+                className="sm:text-[1rem] text-sm font-semibold text-[#2292BF] tracking-wide hover:underline decoration-2 decoration-[#2292BF] flex flex-row items-center justify-center"
                 href="https://github.com/YeyoM/mazeSolver"
                 target="_blank"
               >
@@ -181,18 +181,18 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-row items-center justify-between mt-10">
-            <div className="flex flex-row items-center justify-center">
+            <div className="flex flex-row w-full">
               <Image
                 src="/cocktail-please.png"
                 alt="cocktail-please"
-                width={160}
-                height={160}
+                width={150}
+                height={150}
               />
               <div className="flex flex-col ml-4">
-                <p className="text-md font-semibold text-black tracking-wide">
+                <p className="sm:text-[1rem] text-sm font-semibold text-black tracking-wide">
                   Cocktail Please!
                 </p>
-                <p className="text-md font-normal text-black tracking-wide italic">
+                <p className="sm:text-[1rem] text-sm font-normal text-black tracking-wide italic">
                   A cocktail recipe generator
                 </p>
                 <p className="text-xs font-normal tracking-wide text-[#1256bd]">
@@ -200,9 +200,9 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-row items-center justify-center">
+            <div className="flex flex-row items-center justify-center ml-2">
               <a 
-                className="text-md font-semibold text-[#2292BF] tracking-wide hover:underline decoration-2 decoration-[#2292BF] flex flex-row items-center justify-center"
+                className="sm:text-[1rem] text-sm font-semibold text-[#2292BF] tracking-wide hover:underline decoration-2 decoration-[#2292BF] flex flex-row items-center justify-center"
                 href="/cocktail-please"
               >
                 Learn more
@@ -221,11 +221,6 @@ export default function Home() {
 
       </div>
 
-      {/* Orbs */}
-      <div className="absolute w-[300px] h-[300px] blur-[80px] top-[80rem] left-[10rem] rounded-[50%] bg-[#00b7ff93] opacity-30"></div>
-      <div className="absolute w-[300px] h-[300px] blur-[80px] top-[10rem] right-[20rem] rounded-[50%] bg-[#00b7ff93] opacity-30"></div>
-      <div className="absolute w-[300px] h-[300px] blur-[80px] top-[45rem] right-[10rem] rounded-[50%] bg-[#00b7ff93] opacity-30"></div>
-      
     </main>
   )
 }
