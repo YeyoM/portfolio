@@ -1,13 +1,12 @@
-name: Deploy
-on:
-  push:
-    branches:
-      - main
-  workflow_dispatch:
+  name: Deploy
+  on:
+    push:
+      branches:
+        - main
+    workflow_dispatch:
 
-jobs:
-
-  deploy:
+  jobs:
+    deploy:
       name: "Deploy to VPS"
       runs-on: ubuntu-latest
       steps:
