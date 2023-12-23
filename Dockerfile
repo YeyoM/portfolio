@@ -8,6 +8,10 @@ RUN npm install
 
 COPY . .
 
-EXPOSE 8080
+RUN npm run build
 
-CMD ["npm", "run", "dev"]
+EXPOSE 3000
+
+USER node
+
+CMD [ "npm", "start" ]
