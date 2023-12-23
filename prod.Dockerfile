@@ -28,8 +28,6 @@ FROM base AS runner
 
 WORKDIR /app
 
-
-
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nextjs
 USER nextjs
@@ -45,3 +43,5 @@ ARG NEXT_PUBLIC_ENV_VARIABLE
 ENV NEXT_PUBLIC_ENV_VARIABLE=${NEXT_PUBLIC_ENV_VARIABLE}
 
 CMD ["node", "server.js"]
+
+EXPOSE 3000
