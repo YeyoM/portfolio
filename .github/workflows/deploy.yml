@@ -10,25 +10,14 @@
       name: "Deploy to VPS"
       runs-on: ubuntu-latest
       steps:
-        - name: Configure SSH
-          run: |
-            mkdir -p ~/.ssh/
-            echo "$SSH_PRIVATE_KEY" > ~/.ssh/deploy_key.pem
-            chmod 600 ~/.ssh/deploy_key.pem
-            cat >> ~/.ssh/config << END
-            Host my-vps
-              HostName $SSH_IP
-              User $SSH_USER
-              IdentityFile ~/.ssh/deploy_key.pem
-              StrictHostKeyChecking no
-            END
-          env:
-            SSH_USER: ${{ secrets.SSH_USER }}
-            SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-            SSH_IP: ${{ secrets.SSH_IP }}
-          
-        - name: Deploy Site
-          run: ssh my-vps '~/redeploy-site.sh'
+        - name: Deploy
+          uses: appleboy/ssh-action@master
+          with:
+            host: ${{ secrets.SSH_IP }}
+            username: ${{ secrets.SSH_USER }}
+            key: ${{ secrets.SSH_PRIVATE_KEY }}
+            script: |
+              ~/redeploy.sh
 
         - name: Discord Message
           run: curl -s -X POST "${{ secrets.DISCORD_WEBHOOK }}" -d "content=🚀 Deployment Successful"
