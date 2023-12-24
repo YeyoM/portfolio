@@ -14,7 +14,7 @@ export default function Navbar() {
           <span className="text-gray-600">/</span>
           <a href="/" className="text-gray-600 hover:text-gray-900 hover:font-medium underline decoration-2 decoration-[#2292BF] sm:tracking-wider">work</a>
           <span className="text-gray-600">/</span>
-          <a href="https://drive.google.com/file/d/1ofyxwcS4hPEueNt7ZfQlibo1MRdBq_ie/view?usp=sharing" target='_blank' className="text-gray-600 hover:text-gray-900 hover:font-medium underline decoration-2 decoration-[#2292BF] sm:tracking-wider">resume</a>
+          <a href="https://drive.google.com/file/d/189w1ZftPhTsdMcLlOGAJrNfk8v9-Gzzl/view?usp=sharing" target='_blank' className="text-gray-600 hover:text-gray-900 hover:font-medium underline decoration-2 decoration-[#2292BF] sm:tracking-wider">resume</a>
         </div>
       </div>
     </div>
