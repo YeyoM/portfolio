@@ -5,3 +5,5 @@ Then run certbot --nginx renew -v, if we got an error try to install the followi
 apt-get update
 apt-get install python3-certbot-nginx
 then rerun the command
+
+Then run the redeploy command to start the containers again
