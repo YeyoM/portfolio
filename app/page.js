@@ -1,6 +1,6 @@
-import Image from 'next/image'
-import Navbar from './components/navbar'
-import Footer from './components/footer'
+import Image from "next/image";
+import Navbar from "./components/navbar";
+import Footer from "./components/footer";
 
 export default function Home() {
   return (
@@ -10,29 +10,38 @@ export default function Home() {
         {/* Hero */}
         <div className="flex flex-col w-[90%] max-w-[990px] mt-36">
           <h3 className="text-3xl font-normal text-black tracking-wide sm:text-4xl md:text-5xl">
-          hey, this is Diego! <br />
-          a <span className="font-semibold italic text-[#2292BF]"> software engineer </span> making <br />
-          sites more accessible and <br />
-          reliable. 
+            hey, this is Diego! <br />
+            an aspiring{" "}
+            <span className="font-semibold italic text-[#2292BF]">
+              {" "}
+              site reliability engineer{" "}
+            </span>{" "}
+            making sites more accessible and reliable.
           </h3>
         </div>
         <hr className="w-[90%] max-w-[990px] border-black border-opacity-50 mt-12" />
         {/* Status */}
         <div className="flex flex-col w-[90%] max-w-[990px] mt-6">
           <p className="text-md font-normal text-black tracking-wide">
-          Currently. <span className="italic font-semibold">Computer Science student @ UAA</span>
+            Currently.{" "}
+            <span className="italic font-semibold">
+              Computer Science student @ UAA
+            </span>
           </p>
           <p className="text-md font-normal text-black tracking-wide">
-          Previously. <span className="italic font-semibold">Site Reliability Engineer Fellow @ MLH </span>
+            Previously.{" "}
+            <span className="italic font-semibold">
+              Site Reliability Engineer Fellow @ MLH{" "}
+            </span>
           </p>
           <p className="text-md font-normal text-black tracking-wide">
-          Status. <span className="italic font-semibold">Open to work </span>
+            Status. <span className="italic font-semibold">Open to work </span>
           </p>
         </div>
         {/* Experience */}
         <div className="flex flex-col w-[90%] max-w-[990px] mt-24">
           <p className="text-2xl font-normal text-black tracking-wide italic">
-          Experience
+            Experience
           </p>
           <hr className="w-full border-black border-opacity-50 mt-2" />
           <div className="flex flex-row items-center justify-between mt-6">
@@ -42,6 +51,7 @@ export default function Home() {
                 alt="mlh-logo"
                 width={100}
                 height={100}
+                className="w-[100px] h-[100px]"
               />
               <div className="flex flex-col ml-4">
                 <p className="sm:text-[1rem] text-sm font-semibold text-black tracking-wide">
@@ -53,7 +63,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex flex-row items-center justify-center">
-              <a 
+              <a
                 className="sm:text-[1rem] text-sm font-semibold text-[#2292BF] tracking-wide hover:underline decoration-2 decoration-[#2292BF] flex flex-row items-center justify-center ml-2"
                 href="/mlh-fellowship"
               >
@@ -80,7 +90,8 @@ export default function Home() {
                 src="/lofi-terminal.png"
                 alt="lofi-terminal"
                 width={150}
-                height={150}
+                height={100}
+                className="w-[150px] h-[100px]"
               />
               <div className="flex flex-col ml-4">
                 <p className="sm:text-[1rem] text-sm font-semibold text-black tracking-wide">
@@ -95,7 +106,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex flex-row items-center justify-center ml-2">
-              <a 
+              <a
                 className="sm:text-[1rem] text-sm font-semibold text-[#2292BF] tracking-wide hover:underline decoration-2 decoration-[#2292BF] flex flex-row items-center justify-center"
                 href="/lofi-terminal"
               >
@@ -115,7 +126,8 @@ export default function Home() {
                 src="/wellness.png"
                 alt="wellness"
                 width={150}
-                height={150}
+                height={95}
+                className="w-[150px] h-[95px]"
               />
               <div className="flex flex-col ml-4">
                 <p className="sm:text-[1rem] text-sm font-semibold text-black tracking-wide">
@@ -130,7 +142,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex flex-row items-center justify-center ml-2">
-              <a 
+              <a
                 className="sm:text-[1rem] text-sm font-semibold text-[#2292BF] tracking-wide hover:underline decoration-2 decoration-[#2292BF] flex flex-row items-center justify-center"
                 href="/wellness"
               >
@@ -150,7 +162,8 @@ export default function Home() {
                 src="/maze-solver.png"
                 alt="maze-solver"
                 width={150}
-                height={150}
+                height={100}
+                className="w-[150px] h-[100px]"
               />
               <div className="flex flex-col ml-4">
                 <p className="sm:text-[1rem] text-sm font-semibold text-black tracking-wide">
@@ -165,7 +178,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex flex-row items-center justify-center ml-2">
-              <a 
+              <a
                 className="sm:text-[1rem] text-sm font-semibold text-[#2292BF] tracking-wide hover:underline decoration-2 decoration-[#2292BF] flex flex-row items-center justify-center"
                 href="https://github.com/YeyoM/mazeSolver"
                 target="_blank"
@@ -186,7 +199,8 @@ export default function Home() {
                 src="/cocktail-please.png"
                 alt="cocktail-please"
                 width={150}
-                height={150}
+                height={95}
+                className="w-[150px] h-[95px]"
               />
               <div className="flex flex-col ml-4">
                 <p className="sm:text-[1rem] text-sm font-semibold text-black tracking-wide">
@@ -201,7 +215,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex flex-row items-center justify-center ml-2">
-              <a 
+              <a
                 className="sm:text-[1rem] text-sm font-semibold text-[#2292BF] tracking-wide hover:underline decoration-2 decoration-[#2292BF] flex flex-row items-center justify-center"
                 href="/cocktail-please"
               >
@@ -217,10 +231,8 @@ export default function Home() {
           </div>
         </div>
 
-       <Footer />
-
+        <Footer />
       </div>
-
     </main>
-  )
+  );
 }
