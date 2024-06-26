@@ -44,7 +44,7 @@ export default function Home() {
             Experience
           </p>
           <hr className="w-full border-black border-opacity-50 mt-2" />
-          <div className="flex flex-row items-center justify-between mt-6">
+          <div className="flex sm:flex-row flex-col items-center justify-between mt-10">
             <div className="flex flex-row items-center justify-center">
               <Image
                 src="/mlh.png"
@@ -62,7 +62,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-row items-center justify-center">
+            <div className="flex flex-row items-center justify-center sm:ml-2 ml-0 sm:mt-0 mt-4">
               <a
                 className="sm:text-[1rem] text-sm font-semibold text-[#2292BF] tracking-wide hover:underline decoration-2 decoration-[#2292BF] flex flex-row items-center justify-center ml-2"
                 href="/mlh-fellowship"
@@ -84,7 +84,7 @@ export default function Home() {
             Side projects
           </p>
           <hr className="w-full border-black border-opacity-50 mt-2" />
-          <div className="flex flex-row items-center justify-between mt-10">
+          <div className="flex sm:flex-row flex-col items-center justify-between mt-10">
             <div className="flex flex-row w-full">
               <Image
                 src="/lofi-terminal.png"
@@ -105,7 +105,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-row items-center justify-center ml-2">
+            <div className="flex flex-row items-center justify-center sm:ml-2 ml-0 sm:mt-0 mt-4">
               <a
                 className="sm:text-[1rem] text-sm font-semibold text-[#2292BF] tracking-wide hover:underline decoration-2 decoration-[#2292BF] flex flex-row items-center justify-center"
                 href="/lofi-terminal"
@@ -120,7 +120,7 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="flex flex-row items-center justify-between mt-10">
+          <div className="flex sm:flex-row flex-col items-center justify-between mt-10">
             <div className="flex flex-row w-full">
               <Image
                 src="/wellness.png"
@@ -141,7 +141,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-row items-center justify-center ml-2">
+            <div className="flex flex-row items-center justify-center sm:ml-2 ml-0 sm:mt-0 mt-4">
               <a
                 className="sm:text-[1rem] text-sm font-semibold text-[#2292BF] tracking-wide hover:underline decoration-2 decoration-[#2292BF] flex flex-row items-center justify-center"
                 href="/wellness"
@@ -156,7 +156,7 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="flex flex-row items-center justify-between mt-10">
+          <div className="flex sm:flex-row flex-col items-center justify-between mt-10">
             <div className="flex flex-row w-full">
               <Image
                 src="/maze-solver.png"
@@ -177,7 +177,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-row items-center justify-center ml-2">
+            <div className="flex flex-row items-center justify-center sm:ml-2 ml-0 sm:mt-0 mt-4">
               <a
                 className="sm:text-[1rem] text-sm font-semibold text-[#2292BF] tracking-wide hover:underline decoration-2 decoration-[#2292BF] flex flex-row items-center justify-center"
                 href="https://github.com/YeyoM/mazeSolver"
@@ -193,7 +193,7 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="flex flex-row items-center justify-between mt-10">
+          <div className="flex sm:flex-row flex-col items-center justify-between mt-10">
             <div className="flex flex-row w-full">
               <Image
                 src="/cocktail-please.png"
@@ -214,7 +214,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-row items-center justify-center ml-2">
+            <div className="flex flex-row items-center justify-center sm:ml-2 ml-0 sm:mt-0 mt-4">
               <a
                 className="sm:text-[1rem] text-sm font-semibold text-[#2292BF] tracking-wide hover:underline decoration-2 decoration-[#2292BF] flex flex-row items-center justify-center"
                 href="/cocktail-please"
