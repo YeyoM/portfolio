@@ -11,6 +11,8 @@ RUN npm ci
 # Adjusted to reflect the new directory structure
 COPY pages ./pages
 COPY public ./public
+COPY posts ./posts
+COPY lib ./lib
 COPY next.config.js .
 COPY jsconfig.json .
 COPY postcss.config.js .
