@@ -1,0 +1,50 @@
+import Head from "next/head";
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
+import Date from "../components/date";
+
+import { getAllPostIds, getPostData } from "../../lib/posts";
+
+import styles from "./Post.module.css";
+
+export default function Post({ postData }) {
+  return (
+    <main className="bg-[#FBF6ED] min-h-screen">
+      <Head>
+        <title>{postData.title}</title>
+      </Head>
+      <Navbar />
+      <div className="mx-auto flex flex-col items-center justify-center">
+        <div className="flex flex-col w-[90%] max-w-[720px] mt-36">
+          <h3 className="text-3xl font-normal text-black tracking-wide sm:text-4xl md:text-5xl">
+            {postData.title}
+          </h3>
+          <Date dateString={postData.date} />
+          <hr className="w-full border-black border-opacity-50 mt-12" />
+        </div>
+        <div
+          className="flex flex-col w-[90%] max-w-[720px] mt-6 mb-40 text-justify [&>ol]:list-decimal [&>ol>li]:list-inside [&>*]:mb-8 [&>h3]:text-2xl [&>p]:text-md [&>pre]:bg-[#333] [&>pre>code]:text-[#f0f0f0] [&>pre>code]:text-sm [&>pre]:p-4 [&>pre]:overflow-x-scroll [&>pre]:rounded-lg"
+          dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
+        />
+        <Footer />
+      </div>
+    </main>
+  );
+}
+
+export async function getStaticPaths() {
+  const paths = getAllPostIds();
+  return {
+    paths,
+    fallback: false,
+  };
+}
+
+export async function getStaticProps({ params }) {
+  const postData = await getPostData(params.id);
+  return {
+    props: {
+      postData,
+    },
+  };
+}

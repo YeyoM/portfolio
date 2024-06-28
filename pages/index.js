@@ -1,8 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
+import Date from "./components/date";
 
-export default function Home() {
+import { getSortedPostsData } from "@/lib/posts";
+
+export default function Home({ allPostsData }) {
   return (
     <main className="bg-[#FBF6ED] min-h-screen">
       <Navbar />
@@ -63,7 +67,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex flex-row items-center justify-center sm:ml-2 ml-0 sm:mt-0 mt-4">
-              <a
+              <Link
                 className="sm:text-[1rem] text-sm font-semibold text-[#2292BF] tracking-wide hover:underline decoration-2 decoration-[#2292BF] flex flex-row items-center justify-center ml-2"
                 href="/mlh-fellowship"
               >
@@ -74,9 +78,30 @@ export default function Home() {
                   width={20}
                   height={20}
                 />
-              </a>
+              </Link>
             </div>
           </div>
+        </div>
+        {/* blog */}
+        <div className="flex flex-col w-[90%] max-w-[990px] mt-24">
+          <p className="text-2xl font-normal text-black tracking-wide italic">
+            Some cool posts
+          </p>
+          <hr className="w-full border-black border-opacity-50 mt-2 mb-8" />
+          {allPostsData.map(({ id, date, title }) => (
+            <div key={id} className="mt-4">
+              <Link
+                href={`/blog/${id}`}
+                className="text-lg font-semibold text-[#2292BF] hover:underline"
+              >
+                {title}
+              </Link>
+              <br />
+              <small className="text-gray-600">
+                <Date dateString={date} />
+              </small>
+            </div>
+          ))}
         </div>
         {/* Projects */}
         <div className="flex flex-col w-[90%] max-w-[990px] mt-24 mb-24">
@@ -87,28 +112,28 @@ export default function Home() {
           <div className="flex sm:flex-row flex-col items-center justify-between mt-10">
             <div className="flex flex-row w-full">
               <Image
-                src="/lofi-terminal.png"
-                alt="lofi-terminal"
+                src="/better-commits.png"
+                alt="better-commits"
                 width={150}
-                height={100}
-                className="w-[150px] h-[100px]"
+                height={95}
+                className="w-[150px] h-[95px]"
               />
               <div className="flex flex-col ml-4">
                 <p className="sm:text-[1rem] text-sm font-semibold text-black tracking-wide">
-                  Lo-Fi Terminal
+                  Better Commits
                 </p>
                 <p className="sm:text-[1rem] text-sm font-normal text-black tracking-wide italic">
-                  A terminal-based music player
+                  CLI tool to improve your git commits
                 </p>
                 <p className="text-xs font-normal tracking-wide text-[#1256bd]">
-                  Next, React, react-terminal, Firebase
+                  Golang, bubbletea, lipgloss
                 </p>
               </div>
             </div>
             <div className="flex flex-row items-center justify-center sm:ml-2 ml-0 sm:mt-0 mt-4">
-              <a
+              <Link
                 className="sm:text-[1rem] text-sm font-semibold text-[#2292BF] tracking-wide hover:underline decoration-2 decoration-[#2292BF] flex flex-row items-center justify-center"
-                href="/lofi-terminal"
+                href="/better-commits"
               >
                 Learn more
                 <Image
@@ -117,7 +142,7 @@ export default function Home() {
                   width={20}
                   height={20}
                 />
-              </a>
+              </Link>
             </div>
           </div>
           <div className="flex sm:flex-row flex-col items-center justify-between mt-10">
@@ -137,12 +162,12 @@ export default function Home() {
                   Your perfect gym partner
                 </p>
                 <p className="text-xs font-normal tracking-wide text-[#1256bd]">
-                  React Native, Expo, Firebase
+                  Javascript, React Native, Expo, Firebase
                 </p>
               </div>
             </div>
             <div className="flex flex-row items-center justify-center sm:ml-2 ml-0 sm:mt-0 mt-4">
-              <a
+              <Link
                 className="sm:text-[1rem] text-sm font-semibold text-[#2292BF] tracking-wide hover:underline decoration-2 decoration-[#2292BF] flex flex-row items-center justify-center"
                 href="/wellness"
               >
@@ -153,35 +178,34 @@ export default function Home() {
                   width={20}
                   height={20}
                 />
-              </a>
+              </Link>
             </div>
           </div>
           <div className="flex sm:flex-row flex-col items-center justify-between mt-10">
             <div className="flex flex-row w-full">
               <Image
-                src="/maze-solver.png"
-                alt="maze-solver"
+                src="/lofi-terminal.png"
+                alt="lofi-terminal"
                 width={150}
-                height={100}
-                className="w-[150px] h-[100px]"
+                height={95}
+                className="w-[150px] h-[95px]"
               />
               <div className="flex flex-col ml-4">
                 <p className="sm:text-[1rem] text-sm font-semibold text-black tracking-wide">
-                  Maze Solver
+                  Lo-Fi Terminal
                 </p>
                 <p className="sm:text-[1rem] text-sm font-normal text-black tracking-wide italic">
-                  A python maze solver using DFS, BFS, and A*
+                  A terminal-based music player
                 </p>
                 <p className="text-xs font-normal tracking-wide text-[#1256bd]">
-                  Python
+                  Javascript, Next, React, react-terminal, Firebase
                 </p>
               </div>
             </div>
             <div className="flex flex-row items-center justify-center sm:ml-2 ml-0 sm:mt-0 mt-4">
-              <a
+              <Link
                 className="sm:text-[1rem] text-sm font-semibold text-[#2292BF] tracking-wide hover:underline decoration-2 decoration-[#2292BF] flex flex-row items-center justify-center"
-                href="https://github.com/YeyoM/mazeSolver"
-                target="_blank"
+                href="/lofi-terminal"
               >
                 Learn more
                 <Image
@@ -190,7 +214,7 @@ export default function Home() {
                   width={20}
                   height={20}
                 />
-              </a>
+              </Link>
             </div>
           </div>
           <div className="flex sm:flex-row flex-col items-center justify-between mt-10">
@@ -210,12 +234,12 @@ export default function Home() {
                   A cocktail recipe generator
                 </p>
                 <p className="text-xs font-normal tracking-wide text-[#1256bd]">
-                  React, Next, Tailwind, CocktailDB, Firebase Auth
+                  Javascript, React, Next, Tailwind, CocktailDB, Firebase Auth
                 </p>
               </div>
             </div>
             <div className="flex flex-row items-center justify-center sm:ml-2 ml-0 sm:mt-0 mt-4">
-              <a
+              <Link
                 className="sm:text-[1rem] text-sm font-semibold text-[#2292BF] tracking-wide hover:underline decoration-2 decoration-[#2292BF] flex flex-row items-center justify-center"
                 href="/cocktail-please"
               >
@@ -226,13 +250,103 @@ export default function Home() {
                   width={20}
                   height={20}
                 />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
-
+        {/* School Projects */}
+        <div className="flex flex-col w-[90%] max-w-[990px] mb-24">
+          <p className="text-2xl font-normal text-black tracking-wide italic">
+            Cool school projects
+          </p>
+          <hr className="w-full border-black border-opacity-50 mt-2" />
+          <div className="flex sm:flex-row flex-col items-center justify-between mt-10">
+            <div className="flex flex-row w-full">
+              <Image
+                src="/turing-machine.png"
+                alt="turing-machine"
+                width={150}
+                height={95}
+                className="w-[150px] h-[95px]"
+              />
+              <div className="flex flex-col ml-4">
+                <p className="sm:text-[1rem] text-sm font-semibold text-black tracking-wide">
+                  Universal Turing Machine
+                </p>
+                <p className="sm:text-[1rem] text-sm font-normal text-black tracking-wide italic">
+                  A universal turing machine simulator
+                </p>
+                <p className="text-xs font-normal tracking-wide text-[#1256bd]">
+                  Golang
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row items-center justify-center sm:ml-2 ml-0 sm:mt-0 mt-4">
+              <Link
+                className="sm:text-[1rem] text-sm font-semibold text-[#2292BF] tracking-wide hover:underline decoration-2 decoration-[#2292BF] flex flex-row items-center justify-center"
+                href="https://github.com/YeyoM/universal-turing-go"
+                target="_blank"
+              >
+                Learn more
+                <Image
+                  src="/arrow.png"
+                  alt="arrow-right"
+                  width={20}
+                  height={20}
+                />
+              </Link>
+            </div>
+          </div>
+          <div className="flex sm:flex-row flex-col items-center justify-between mt-10">
+            <div className="flex flex-row w-full">
+              <Image
+                src="/maze-solver.png"
+                alt="maze-solver"
+                width={150}
+                height={95}
+                className="w-[150px] h-[95px]"
+              />
+              <div className="flex flex-col ml-4">
+                <p className="sm:text-[1rem] text-sm font-semibold text-black tracking-wide">
+                  Maze Solver
+                </p>
+                <p className="sm:text-[1rem] text-sm font-normal text-black tracking-wide italic">
+                  A python maze solver using DFS, BFS, and A*
+                </p>
+                <p className="text-xs font-normal tracking-wide text-[#1256bd]">
+                  Python
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row items-center justify-center sm:ml-2 ml-0 sm:mt-0 mt-4">
+              <Link
+                className="sm:text-[1rem] text-sm font-semibold text-[#2292BF] tracking-wide hover:underline decoration-2 decoration-[#2292BF] flex flex-row items-center justify-center"
+                href="https://github.com/YeyoM/mazeSolver"
+                target="_blank"
+              >
+                Learn more
+                <Image
+                  src="/arrow.png"
+                  alt="arrow-right"
+                  width={20}
+                  height={20}
+                />
+              </Link>
+            </div>
+          </div>
+        </div>
         <Footer />
       </div>
     </main>
   );
+}
+
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData();
+  console.log(allPostsData);
+  return {
+    props: {
+      allPostsData,
+    },
+  };
 }

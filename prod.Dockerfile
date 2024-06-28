@@ -8,8 +8,10 @@ COPY package.json package-lock.json ./
 
 RUN npm ci
 
-COPY app ./app
+# Adjusted to reflect the new directory structure
+COPY pages ./pages
 COPY public ./public
+COPY styles ./styles
 COPY next.config.js .
 COPY jsconfig.json .
 COPY postcss.config.js .
@@ -42,6 +44,10 @@ ENV ENV_VARIABLE=${ENV_VARIABLE}
 ARG NEXT_PUBLIC_ENV_VARIABLE
 ENV NEXT_PUBLIC_ENV_VARIABLE=${NEXT_PUBLIC_ENV_VARIABLE}
 
+# Ensure server.js exists in the correct location
+COPY --from=builder --chown=nextjs:nodejs /app/server.js ./server.js
+
 CMD ["node", "server.js"]
 
 EXPOSE 3000
+
