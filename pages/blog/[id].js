@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
-import Navbar from "../components/navbar";
-import Footer from "../components/footer";
-import Date from "../components/date";
+import Navbar from "../../components/navbar";
+import Footer from "../../components/footer";
+import Date from "../../components/date";
 
 import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
@@ -14,6 +14,9 @@ import { getAllPostIds, getPostDataAlternative } from "../../lib/posts";
 const customRenderers = {
   code(code) {
     const { children, className } = code;
+    if (!className) {
+      return <code>{children}</code>;
+    }
     const language = className.split("-")[1];
     return (
       <SyntaxHighLighter style={nord} language={language}>

@@ -13,6 +13,7 @@ COPY pages ./pages
 COPY public ./public
 COPY posts ./posts
 COPY lib ./lib
+COPY components ./components
 COPY next.config.js .
 COPY jsconfig.json .
 COPY postcss.config.js .
@@ -46,8 +47,11 @@ ENV ENV_VARIABLE=${ENV_VARIABLE}
 ARG NEXT_PUBLIC_ENV_VARIABLE
 ENV NEXT_PUBLIC_ENV_VARIABLE=${NEXT_PUBLIC_ENV_VARIABLE}
 
+# Check if the `server.js` file exists and copy it
+RUN if [ -f /app/.next/standalone/server.js ]; then echo "server.js found"; else echo "server.js not found"; fi
+
 # Ensure server.js exists in the correct location
-COPY --from=builder --chown=nextjs:nodejs /app/server.js ./server.js
+COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone/server.js ./server.js
 
 CMD ["node", "server.js"]
 
