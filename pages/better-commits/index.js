@@ -37,8 +37,8 @@ export default function Page() {
             type="1"
           >
             <li className="mb-2 mt-2">
-              Select the type of change that you're committing (e.g., feat, fix,
-              docs).
+              Select the type of change that you&apos;re committing (e.g., feat,
+              fix, docs).
             </li>
             <li className="mb-2">
               Specify the scope of the change (e.g., user, admin, etc.) or
