@@ -11,12 +11,12 @@ RUN npm ci
 # Adjusted to reflect the new directory structure
 COPY pages ./pages
 COPY public ./public
-COPY styles ./styles
 COPY next.config.js .
 COPY jsconfig.json .
 COPY postcss.config.js .
 COPY tailwind.config.js .
 COPY .eslintrc.json .
+COPY . .
 
 ARG ENV_VARIABLE
 ENV ENV_VARIABLE=${ENV_VARIABLE}
