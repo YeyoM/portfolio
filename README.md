@@ -15,7 +15,7 @@ This is the repository for my personal portfolio, it is a simple website that sh
 To run the project locally you need to have docker installed in your machine, then you can run the following command:
 
 ```bash
-docker-compose up -f docker-compose.yml --build
+docker-compose -f docker-compose.yml up --build
 ```
 
 ## How to deploy
@@ -23,8 +23,16 @@ docker-compose up -f docker-compose.yml --build
 There is already a script and a CI and CD pipeline that uses github actions to deploy the project to a server, but if you want to deploy it manually you can run the following command:
 
 ```bash
-docker-compose down -f docker-compose.prod.yml
-docker-compose up -f docker-compose.prod.yml --build
+docker-compose -f docker-compose.prod.yml down
+docker-compose -f docker-compose.prod.yml up --build
+```
+
+## Troubleshooting
+
+If there are anyy troubles, please first try to run the following command:
+
+```bash
+docker system prune -a
 ```
 
 ## How to renew certificates
