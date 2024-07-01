@@ -148,6 +148,42 @@ export default function Home({ allPostsData }) {
           <div className="flex sm:flex-row flex-col items-center justify-between mt-10">
             <div className="flex flex-row w-full">
               <Image
+                src="/portfolio.png"
+                alt="portfolio"
+                width={150}
+                height={95}
+                className="w-[150px] h-[95px]"
+              />
+              <div className="flex flex-col ml-4">
+                <p className="sm:text-[1rem] text-sm font-semibold text-black tracking-wide">
+                  Personal Portfolio
+                </p>
+                <p className="sm:text-[1rem] text-sm font-normal text-black tracking-wide italic">
+                  My personal portfolio
+                </p>
+                <p className="text-xs font-normal tracking-wide text-[#1256bd]">
+                  Docker, Next.js, nginx, github actions and Digital Ocean
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row items-center justify-center sm:ml-2 ml-0 sm:mt-0 mt-4">
+              <Link
+                className="sm:text-[1rem] text-sm font-semibold text-[#2292BF] tracking-wide hover:underline decoration-2 decoration-[#2292BF] flex flex-row items-center justify-center"
+                href="/portfolio"
+              >
+                Learn more
+                <Image
+                  src="/arrow.png"
+                  alt="arrow-right"
+                  width={20}
+                  height={20}
+                />
+              </Link>
+            </div>
+          </div>
+          <div className="flex sm:flex-row flex-col items-center justify-between mt-10">
+            <div className="flex flex-row w-full">
+              <Image
                 src="/wellness.png"
                 alt="wellness"
                 width={150}
