@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# Stopping grafana and prometheus
+echo "Stopping grafana and prometheus"
+systemctl stop grafana-server
+systemctl stop prometheus
+
 echo "Entering project"
 # Enter to the project
 cd /root/portfolio
@@ -29,5 +34,13 @@ docker system prune -a --volumes -f
 # Build the new containers
 echo "Building new containers"
 docker compose -f docker-compose.prod.yml up -d --build
+
+# Start grafana and prometheus 
+echo "Starting grafana and prometheus"
+systemctl start grafana-server
+systemctl start prometheus
+
+systemctl status grafana-server
+systemctl status prometheus
 
 echo "Exiting project"
